@@ -1,0 +1,10 @@
+{
+  "name": "API REST Base PHP",
+  "version": "1.0.0",
+  "description": "API base para el módulo de Desarrollo web en entorno servidor",
+  "title": "Documentación API REST Base",
+  "url": "http://localhost/api-rest-base/public",
+  "template": {
+    "withGenerator": false
+  }
+}
