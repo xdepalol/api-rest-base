@@ -71,13 +71,6 @@ Edita `config/config.php` con tus credenciales locales.
 
 ### 4️⃣ Ejecutar la API
 Ejemplo de endpoint:
-
-
-### 3️⃣ Configurar la conexión
-Edita `config/config.php` con tus credenciales locales.
-
-### 4️⃣ Ejecutar la API
-Ejemplo de endpoint:
 ```
 http://localhost/api-rest-base/public/api/products
 ```
@@ -97,13 +90,14 @@ Permite:
 Guía oficial recomendada:  
 🔗 https://learning.postman.com/docs/getting-started/introduction/
 
-Ejemplo de POST:
+Ejemplo de GET:
 
-POST http://localhost/api-rest-base/public/api/products
+GET http://localhost/api-rest-base/public/api/products?id=1
 
 Content-Type: application/json
 ```yaml
 {
+   "id": 1
    "name": "Teclado",
    "price": 19.90
 }
