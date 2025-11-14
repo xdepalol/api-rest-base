@@ -90,16 +90,24 @@ Permite:
 Guía oficial recomendada:  
 🔗 https://learning.postman.com/docs/getting-started/introduction/
 
-Ejemplo de GET:
+Ejemplo de POST:
 
-GET http://localhost/api-rest-base/public/api/products?id=1
+POST http://localhost/api-rest-base/public/api/products?id=1
 
-Content-Type: application/json
 ```yaml
+Content-Type: application/json
+POST
 {
-   "id": 1
    "name": "Teclado",
    "price": 19.90
+}
+```
+
+```
+Response:
+HTTP/1.1 200 OK
+{
+   "id": "25"
 }
 ```
 
