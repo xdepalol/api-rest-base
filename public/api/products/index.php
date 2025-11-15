@@ -1,7 +1,7 @@
 <?php
-// public/api/products.php
+// public/api/products/index.php
 
-require_once __DIR__ . '/../../src/ProductRepository.php';
+require_once __DIR__ . '/../../../src/ProductRepository.php';
 
 header('Content-Type: application/json');
 

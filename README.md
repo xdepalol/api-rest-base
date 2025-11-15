@@ -8,10 +8,10 @@ En lugar de enviar páginas web completas, una API REST expone **recursos** medi
 
 | Método HTTP | Uso típico |
 |-------------|-----------|
-| **GET**     | Consultar datos |
-| **POST**    | Crear un nuevo recurso |
+| **GET**     | Lectura de recursos |
+| **POST**    | Creación de recursos |
 | **PUT**     | Actualizar datos |
-| **DELETE**  | Eliminar datos |
+| **DELETE**  | Eliminación de recursos |
 
 Las respuestas suelen enviarse en **JSON**.
 
@@ -32,15 +32,19 @@ Una API REST permite:
 ```
 api-rest-base/
 ├── config/
-│ └── config.php
-├── db/
-│ └── schema.sql
+│   └── config.php
+├── database/
+│   └── create.sql
 ├── public/
-│ └── api/
-│ └── products.php
+|   └── api/
+|       ├── helloworld/
+|       │   └── index.php
+|       └── products/
+|           └── index.php
 ├── src/
-│ ├── Database.php
-│ └── ProductRepository.php
+│   ├── bootstrap.php
+│   ├── Database.php
+│   └── ProductRepository.php
 ├── docs/
 ├── apidoc.json
 └── README.md
@@ -56,9 +60,20 @@ Incluye:
 
 ---
 
+## Requisitos previos
+
+* PHP 8+
+* MySQL o MariaDB
+* Servidor web local (Apache, XAMPP, WAMP, Laragon…)
+* Node.js + npm (para apidoc)
+* Postman
+
 ## 🚀 Cómo poner en marcha la API
 
 ### 1️⃣ Clonar el repositorio
+
+Antes de empezar, realiza un fork de este repositorio en tu cuenta de GitHub.
+
 ```
 git clone https://github.com/TU-USUARIO/api-rest-base.git
 ```
@@ -90,24 +105,42 @@ Permite:
 Guía oficial recomendada:  
 🔗 https://learning.postman.com/docs/getting-started/introduction/
 
-Ejemplo de POST:
+Ejemplo de GET:
 
-POST http://localhost/api-rest-base/public/api/products?id=1
 
 ```yaml
+GET http://localhost/api-rest-base/public/api/helloworld
 Content-Type: application/json
-POST
+```
+Y la respuesta
+```
+HTTP/1.1 200 OK
 {
-   "name": "Teclado",
-   "price": 19.90
+   "message": "Hello World!"
 }
 ```
 
-```
-Response:
-HTTP/1.1 200 OK
+Ejemplo de POST:
+
+
+```yaml
+POST http://localhost/api-rest-base/public/api/products
+Content-Type: application/json
+
 {
-   "id": "25"
+  "name": "Teclado",
+  "price": 19.90
+}
+```
+Respuesta esperada:
+```
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": 25,
+  "name": "Teclado",
+  "price": 19.90
 }
 ```
 
@@ -123,6 +156,8 @@ Authorization: Bearer MI-CLAVE-SECRETA
 ```
 
 El servidor valida si la clave es correcta.
+
+**Nota.** En Postman, puedes añadir el token en la pestaña “Headers”:
 
 ### ✔ JWT (JSON Web Tokens) — ampliación
 Token firmado criptográficamente  
@@ -167,6 +202,9 @@ apidoc -i public/api -o docs
 Esto creará la documentación dentro de `docs/`.
 
 ---
+
+Guía oficial recomendada:  
+🔗 https://apidocjs.com/
 
 ## Próximos pasos (Actividad 3)
 
