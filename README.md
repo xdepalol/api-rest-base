@@ -110,7 +110,6 @@ Ejemplo de GET:
 
 ```yaml
 GET http://localhost/api-rest-base/public/api/helloworld
-Content-Type: application/json
 ```
 Y la respuesta
 ```
@@ -125,21 +124,17 @@ Ejemplo de POST:
 
 ```yaml
 POST http://localhost/api-rest-base/public/api/products
-Content-Type: application/json
-
 {
-  "name": "Teclado",
+  "name": "USB Keyboard",
   "price": 19.90
 }
 ```
 Respuesta esperada:
 ```
 HTTP/1.1 201 Created
-Content-Type: application/json
-
 {
-  "id": 25,
-  "name": "Teclado",
+  "id": 11,
+  "name": "USB Keyboard",
   "price": 19.90
 }
 ```
@@ -159,7 +154,7 @@ El servidor valida si la clave es correcta.
 
 **Nota.** En Postman, puedes añadir el token en la pestaña “Headers”:
 
-Recurso externo:
+Recurso externo:  
 🔗 https://www.rfc-editor.org/rfc/rfc6750
 
 ### ✔ JWT (JSON Web Tokens) — ampliación
