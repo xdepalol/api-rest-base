@@ -159,12 +159,15 @@ El servidor valida si la clave es correcta.
 
 **Nota.** En Postman, puedes añadir el token en la pestaña “Headers”:
 
+Recurso externo:
+🔗 https://www.rfc-editor.org/rfc/rfc6750
+
 ### ✔ JWT (JSON Web Tokens) — ampliación
 Token firmado criptográficamente  
 (más seguro, más profesional, opcional para alumnos avanzados).
 
 Recurso externo recomendado:  
-🔗 https://developer.mozilla.org/es/docs/Web/Security/API_security
+🔗 https://www.jwt.io/introduction#what-is-json-web-token
 
 ---
 
