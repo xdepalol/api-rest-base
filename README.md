@@ -111,8 +111,8 @@ Ejemplo de GET:
 ```yaml
 GET http://localhost/api-rest-base/public/api/helloworld
 ```
-Y la respuesta
-```
+Y la respuesta:
+```yaml
 HTTP/1.1 200 OK
 {
    "message": "Hello World!"
@@ -130,7 +130,7 @@ POST http://localhost/api-rest-base/public/api/products
 }
 ```
 Respuesta esperada:
-```
+```yaml
 HTTP/1.1 201 Created
 {
   "id": 11,
