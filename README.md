@@ -17,7 +17,7 @@
 
 ## Contexto ##
 
-Este repositorio se utiliza como soporte para una actividad práctica del módulo M0613 de DAW2. Permite trabajar de forma progresiva conceptos clave del desarrollo web en entorno servidor y sirve como punto de partida para aprender cómo se estructura, desarrolla y documenta una API REST mediante un proyecto base en PHP. A partir de este recurso podrás completar operaciones CRUD, probar endpoints con Postman y generar documentación técnica con apidoc, siguiendo buenas prácticas utilizadas en entornos profesionales.
+Este repositorio se utiliza como soporte para una actividad práctica del módulo M0613 de DAW2. Permite trabajar de forma progresiva conceptos clave del desarrollo web en entorno servidor y sirve como punto de partida para aprender cómo se estructura, desarrolla y documenta una API REST mediante un proyecto base en PHP. A partir de este recurso podrás completar operaciones CRUD, probar endpoints con Postman y generar documentación técnica con apidoc siguiendo buenas prácticas profesionales.
 
 ## ¿Qué es una API REST?
 Una **API REST** (Representational State Transfer) es una interfaz que permite que dos aplicaciones se comuniquen a través de Internet utilizando peticiones HTTP estándar.
