@@ -31,7 +31,7 @@ Una API REST permite:
 
 ---
 
-## 🔧 ¿Qué contiene este repositorio?
+## 🔧 Estructura del proyecto
 ```
 api-rest-base/
 ├── config/
@@ -82,7 +82,7 @@ git clone https://github.com/TU-USUARIO/api-rest-base.git
 ```
 
 ### 2️⃣ Crear la base de datos
-Importa el archivo: `db/schema.sql`
+Importa el archivo: `database/create.sql`
 
 ### 3️⃣ Configurar la conexión
 Edita `config/config.php` con tus credenciales locales.
@@ -92,6 +92,8 @@ Ejemplo de endpoint:
 ```
 http://localhost/api-rest-base/public/api/products
 ```
+
+**Consejo:** si no ves respuesta o aparece un error 404, asegúrate de que el servidor local apunta correctamente al directorio `public/`.
 
 ---
 
@@ -160,7 +162,7 @@ El servidor valida si la clave es correcta.
 Recurso externo:  
 🔗 https://www.rfc-editor.org/rfc/rfc6750
 
-### ✔ JWT (JSON Web Tokens) — ampliación
+### ✔ JWT (JSON Web Tokens) — ampliación opcional
 Token firmado criptográficamente  
 (más seguro, más profesional, opcional para alumnos avanzados).
 
@@ -207,7 +209,7 @@ Esto creará la documentación dentro de `docs/`.
 Guía oficial recomendada:  
 🔗 https://apidocjs.com/
 
-## Próximos pasos (Actividad)
+## Instrucciones para completar la actividad
 
 1. Completar el CRUD del recurso `products`  
 2. Añadir comentarios DocBlock a cada endpoint  
