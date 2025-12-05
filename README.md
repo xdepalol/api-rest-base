@@ -1,5 +1,8 @@
 # API REST Base en PHP + MySQL  
-**Repositorio para la Actividad 3 — DAW2**
+
+## Contexto ##
+
+Este repositorio sirve como punto de partida para aprender cómo se estructura, desarrolla y documenta una API REST en el contexto del módulo M0613 de DAW2. Aquí encontrarás un proyecto base en PHP preparado para completar operaciones CRUD, probar endpoints con Postman y generar documentación técnica con apidoc. El objetivo es que puedas trabajar de forma autónoma siguiendo buenas prácticas utilizadas en entornos profesionales.
 
 ## ¿Qué es una API REST?
 Una **API REST** (Representational State Transfer) es una interfaz que permite que dos aplicaciones se comuniquen a través de Internet utilizando peticiones HTTP estándar.
@@ -204,7 +207,7 @@ Esto creará la documentación dentro de `docs/`.
 Guía oficial recomendada:  
 🔗 https://apidocjs.com/
 
-## Próximos pasos (Actividad 3)
+## Próximos pasos (Actividad)
 
 1. Completar el CRUD del recurso `products`  
 2. Añadir comentarios DocBlock a cada endpoint  
