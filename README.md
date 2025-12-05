@@ -1,5 +1,20 @@
 # API REST Base en PHP + MySQL  
 
+## Contenidos
+
+1. [Contexto](#contexto)
+2. [¿Qué es una API REST?](#qué-es-una-api-rest)
+3. [¿Para qué se usa una API REST?](#para-qué-se-usa-una-api-rest)
+4. [Estructura del proyecto](#estructura-del-proyecto)
+5. [Requisitos previos](#requisitos-previos)
+6. [Cómo poner en marcha la API](#cómo-poner-en-marcha-la-api)
+7. [¿Qué es Postman?](#qué-es-postman)
+8. [Seguridad básica en APIs REST (opcional)](#seguridad-básica-en-apis-rest-opcional)
+9. [Importancia de documentar una API](#importancia-de-documentar-una-api)
+10. [Generar documentación con apidoc](#generar-documentación-con-apidoc)
+11. [Instrucciones para completar la actividad](#instrucciones-para-completar-la-actividad)
+12. [Créditos y licencia](#créditos-y-licencia)
+
 ## Contexto ##
 
 Este recurso se utiliza como soporte para la actividad práctica del módulo y permite trabajar de forma progresiva conceptos clave del desarrollo web en entorno servidor.
@@ -33,7 +48,7 @@ Una API REST permite:
 
 ---
 
-## 🔧 Estructura del proyecto
+## Estructura del proyecto
 ```
 api-rest-base/
 ├── config/
@@ -73,7 +88,7 @@ Incluye:
 * Node.js + npm (para apidoc)
 * Postman
 
-## 🚀 Cómo poner en marcha la API
+## Cómo poner en marcha la API
 
 ### 1️⃣ Clonar el repositorio
 
@@ -99,7 +114,7 @@ http://localhost/<carpeta-del-proyecto>/public/api/products
 
 ---
 
-## 🧪 ¿Qué es Postman?
+## ¿Qué es Postman?
 **Postman** es una herramienta profesional para probar APIs REST.
 
 Permite:
@@ -148,7 +163,7 @@ HTTP/1.1 201 Created
 
 ---
 
-## 🔐 Seguridad básica en APIs REST (opcional)
+## Seguridad básica en APIs REST (opcional)
 
 ### ✔ Tokens simétricos (nivel adecuado DAW2)
 El cliente envía un token compartido con el servidor:
@@ -173,7 +188,7 @@ Recurso externo recomendado:
 
 ---
 
-## 📚 Importancia de documentar una API
+## Importancia de documentar una API
 Una API sin documentación es:
 
 - difícil de mantener,  
@@ -191,7 +206,7 @@ Por eso este proyecto utiliza **apidoc**, que permite generar documentación HTM
 
 ---
 
-## 📝 Generar documentación con apidoc
+## Generar documentación con apidoc
 
 ### Instalar:
 
@@ -224,6 +239,9 @@ Guía oficial recomendada:
    - Capturas de la documentación generada  
    - Reflexión final
 
-## Créditos/Licencia
+## Créditos y licencia
 
 Recurso creado por Javier de Palol para uso académico en DAW2. Licencia MIT.
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status: Educational](https://img.shields.io/badge/Status-Educational-blue)
