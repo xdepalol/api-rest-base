@@ -2,6 +2,8 @@
 
 ## Contexto ##
 
+Este recurso se utiliza como soporte para la actividad práctica del módulo y permite trabajar de forma progresiva conceptos clave del desarrollo web en entorno servidor.
+
 Este repositorio sirve como punto de partida para aprender cómo se estructura, desarrolla y documenta una API REST en el contexto del módulo M0613 de DAW2. Aquí encontrarás un proyecto base en PHP preparado para completar operaciones CRUD, probar endpoints con Postman y generar documentación técnica con apidoc. El objetivo es que puedas trabajar de forma autónoma siguiendo buenas prácticas utilizadas en entornos profesionales.
 
 ## ¿Qué es una API REST?
@@ -90,7 +92,7 @@ Edita `config/config.php` con tus credenciales locales.
 ### 4️⃣ Ejecutar la API
 Ejemplo de endpoint:
 ```
-http://localhost/api-rest-base/public/api/products
+http://localhost/<carpeta-del-proyecto>/public/api/products
 ```
 
 **Consejo:** si no ves respuesta o aparece un error 404, asegúrate de que el servidor local apunta correctamente al directorio `public/`.
@@ -146,7 +148,7 @@ HTTP/1.1 201 Created
 
 ---
 
-## 🔐 Seguridad básica en APIs REST
+## 🔐 Seguridad básica en APIs REST (opcional)
 
 ### ✔ Tokens simétricos (nivel adecuado DAW2)
 El cliente envía un token compartido con el servidor:
@@ -220,4 +222,8 @@ Guía oficial recomendada:
    - Descripción técnica de las mejoras  
    - Capturas de Postman  
    - Capturas de la documentación generada  
-   - Reflexión final  
+   - Reflexión final
+
+## Créditos/Licencia
+
+Recurso creado por Javier de Palol para uso académico en DAW2. Licencia MIT.
