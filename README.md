@@ -2,18 +2,28 @@
 
 ## Contenidos
 
-1. [Contexto](#contexto)
-2. [¿Qué es una API REST?](#qué-es-una-api-rest)
-3. [¿Para qué se usa una API REST?](#para-qué-se-usa-una-api-rest)
-4. [Estructura del proyecto](#estructura-del-proyecto)
-5. [Requisitos previos](#requisitos-previos)
-6. [Cómo poner en marcha la API](#cómo-poner-en-marcha-la-api)
-7. [¿Qué es Postman?](#qué-es-postman)
-8. [Seguridad básica en APIs REST (opcional)](#seguridad-básica-en-apis-rest-opcional)
-9. [Importancia de documentar una API](#importancia-de-documentar-una-api)
-10. [Generar documentación con apidoc](#generar-documentación-con-apidoc)
-11. [Instrucciones para completar la actividad](#instrucciones-para-completar-la-actividad)
-12. [Créditos y licencia](#créditos-y-licencia)
+- [API REST Base en PHP + MySQL](#api-rest-base-en-php--mysql)
+  - [Contenidos](#contenidos)
+  - [Contexto](#contexto)
+  - [¿Qué es una API REST?](#qué-es-una-api-rest)
+  - [¿Para qué se usa una API REST?](#para-qué-se-usa-una-api-rest)
+  - [Estructura del proyecto](#estructura-del-proyecto)
+  - [Requisitos previos](#requisitos-previos)
+  - [Cómo poner en marcha la API](#cómo-poner-en-marcha-la-api)
+    - [1️⃣ Clonar el repositorio](#1️⃣-clonar-el-repositorio)
+    - [2️⃣ Crear la base de datos](#2️⃣-crear-la-base-de-datos)
+    - [3️⃣ Configurar la conexión](#3️⃣-configurar-la-conexión)
+    - [4️⃣ Ejecutar la API](#4️⃣-ejecutar-la-api)
+  - [¿Qué es Postman?](#qué-es-postman)
+  - [Seguridad básica en APIs REST (opcional)](#seguridad-básica-en-apis-rest-opcional)
+    - [✔ Tokens simétricos (nivel adecuado DAW2)](#-tokens-simétricos-nivel-adecuado-daw2)
+    - [✔ JWT (JSON Web Tokens) — ampliación opcional](#-jwt-json-web-tokens--ampliación-opcional)
+  - [Importancia de documentar una API](#importancia-de-documentar-una-api)
+  - [Generar documentación con apidoc](#generar-documentación-con-apidoc)
+    - [Instalar:](#instalar)
+    - [Generar la documentación:](#generar-la-documentación)
+  - [Instrucciones para completar la actividad](#instrucciones-para-completar-la-actividad)
+  - [Créditos y licencia](#créditos-y-licencia)
 
 ## Contexto ##
 
@@ -32,6 +42,10 @@ En lugar de enviar páginas web completas, una API REST expone **recursos** medi
 | **DELETE**  | Eliminación de recursos |
 
 Las respuestas suelen enviarse en **JSON**.
+
+![Lógica del servidor (PHP + MySQL)](/assets/images/API-REST-Esquema.png "Lógica de servidor")
+
+La API recibe peticiones HTTP, procesa la lógica y accede a la base de datos, devolviendo respuestas en formato JSON.
 
 ---
 
