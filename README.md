@@ -7,8 +7,8 @@
   - [Contexto](#contexto)
   - [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
   - [¿Qué es una API REST?](#qué-es-una-api-rest)
-    - [CRUD del recurso `products`](#crud-del-recurso-products)
     - [Esquema general del funcionamiento de la API REST](#esquema-general-del-funcionamiento-de-la-api-rest)
+    - [CRUD del recurso `products`](#crud-del-recurso-products)
   - [¿Para qué se usa una API REST?](#para-qué-se-usa-una-api-rest)
   - [Estructura del proyecto](#estructura-del-proyecto)
   - [Requisitos previos](#requisitos-previos)
@@ -54,6 +54,12 @@ En lugar de enviar páginas web completas, una API REST expone **recursos** medi
 
 Las respuestas suelen enviarse en **JSON**.
 
+### Esquema general del funcionamiento de la API REST
+
+![Lógica del servidor (PHP + MySQL)](/public/assets/images/API-REST-Esquema.png "Lógica del servidor")
+
+La API recibe peticiones HTTP, procesa la lógica y accede a la base de datos, devolviendo respuestas en formato JSON.
+
 ### CRUD del recurso `products`
 
 | Método    | Endpoint               | Acción                          |
@@ -63,12 +69,6 @@ Las respuestas suelen enviarse en **JSON**.
 | **POST**  | `/products`            | Crear un nuevo producto         |
 | **PUT**   | `/products?id=:id`     | Actualizar un producto existente|
 | **DELETE**| `/products?id=:id`     | Eliminar un producto            |
-
-### Esquema general del funcionamiento de la API REST
-
-![Lógica del servidor (PHP + MySQL)](/public/assets/images/API-REST-Esquema.png "Lógica del servidor")
-
-La API recibe peticiones HTTP, procesa la lógica y accede a la base de datos, devolviendo respuestas en formato JSON.
 
 ---
 
