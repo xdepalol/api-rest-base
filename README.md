@@ -5,7 +5,10 @@
 - [API REST Base en PHP + MySQL](#api-rest-base-en-php--mysql)
   - [Contenidos](#contenidos)
   - [Contexto](#contexto)
+  - [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
   - [¿Qué es una API REST?](#qué-es-una-api-rest)
+    - [CRUD del recurso `products`](#crud-del-recurso-products)
+    - [Esquema general del funcionamiento de la API REST](#esquema-general-del-funcionamiento-de-la-api-rest)
   - [¿Para qué se usa una API REST?](#para-qué-se-usa-una-api-rest)
   - [Estructura del proyecto](#estructura-del-proyecto)
   - [Requisitos previos](#requisitos-previos)
@@ -29,19 +32,39 @@
 
 Este repositorio se utiliza como soporte para una actividad práctica del módulo M0613 de DAW2. Permite trabajar de forma progresiva conceptos clave del desarrollo web en entorno servidor y sirve como punto de partida para aprender cómo se estructura, desarrolla y documenta una API REST mediante un proyecto base en PHP. A partir de este recurso podrás completar operaciones CRUD, probar endpoints con Postman y generar documentación técnica con apidoc siguiendo buenas prácticas profesionales.
 
+## Objetivos de aprendizaje
+Con este recurso podrás:
+- Comprender el funcionamiento básico de una API REST.
+- Implementar operaciones CRUD sobre el recurso `products`.
+- Probar y depurar endpoints utilizando Postman.
+- Generar documentación técnica con apidoc.
+- Organizar tu trabajo siguiendo buenas prácticas de desarrollo backend.
+
 ## ¿Qué es una API REST?
 Una **API REST** (Representational State Transfer) es una interfaz que permite que dos aplicaciones se comuniquen a través de Internet utilizando peticiones HTTP estándar.
 
 En lugar de enviar páginas web completas, una API REST expone **recursos** mediante **endpoints**:
 
-| Método HTTP | Uso típico |
-|-------------|-----------|
-| **GET**     | Lectura de recursos |
-| **POST**    | Creación de recursos |
-| **PUT**     | Actualizar datos |
+| Método HTTP | Uso típico              |
+|-------------|-------------------------|
+| **GET**     | Lectura de recursos     |
+| **POST**    | Creación de recursos    |
+| **PUT**     | Actualizar datos        |
 | **DELETE**  | Eliminación de recursos |
 
 Las respuestas suelen enviarse en **JSON**.
+
+### CRUD del recurso `products`
+
+| Método    | Endpoint               | Acción                          |
+|-----------|------------------------|---------------------------------|
+| **GET**   | `/products`            | Listar todos los productos      |
+| **GET**   | `/products?id=:id`     | Obtener un producto concreto    |
+| **POST**  | `/products`            | Crear un nuevo producto         |
+| **PUT**   | `/products?id=:id`     | Actualizar un producto existente|
+| **DELETE**| `/products?id=:id`     | Eliminar un producto            |
+
+### Esquema general del funcionamiento de la API REST
 
 ![Lógica del servidor (PHP + MySQL)](/assets/images/API-REST-Esquema.png "Lógica de servidor")
 
