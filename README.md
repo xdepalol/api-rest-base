@@ -66,7 +66,7 @@ Las respuestas suelen enviarse en **JSON**.
 
 ### Esquema general del funcionamiento de la API REST
 
-![Lógica del servidor (PHP + MySQL)](/assets/images/API-REST-Esquema.png "Lógica de servidor")
+![Lógica del servidor (PHP + MySQL)](/public/assets/images/API-REST-Esquema.png "Lógica del servidor")
 
 La API recibe peticiones HTTP, procesa la lógica y accede a la base de datos, devolviendo respuestas en formato JSON.
 
